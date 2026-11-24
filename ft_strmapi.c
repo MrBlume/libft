@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: advasseu <advasseu@student.42.fr>          +#+  +:+       +#+        */
+/*   By: blume <blume@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 11:34:35 by advasseu          #+#    #+#             */
-/*   Updated: 2026/11/03 20:54:15 by advasseu         ###   ########.fr       */
+/*   Updated: 2026/11/24 10:57:10 by blume            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,24 +32,24 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (res);
 }
 
-char	touppera(unsigned int i, char c)
-{
-	if (c >= 'a' && c <= 'z')
-		return (c - 32);
-	return (c);
-}
+// char	touppera(unsigned int i, char c)
+// {
+// 	if (c >= 'a' && c <= 'z')
+// 		return (c - 32);
+// 	return (c);
+// }
 
-int main(void)
-{
-    const char *src = "abcdefgh";
+// int main(void)
+// {
+//     const char *src = "abcdefgh";
 
-    char *result = ft_strmapi(src, touppera);
+//     char *result = ft_strmapi(src, touppera);
 
-    printf("ft_strmapi : \"%s\" (adresse : %p)\n", 
-		result ? result : "NULL", (void *)result);
+//     printf("ft_strmapi : \"%s\" (adresse : %p)\n", 
+// 		result ? result : "NULL", (void *)result);
 
-    if (result)
-        free(result);
+//     if (result)
+//         free(result);
 
-    return (0);
-}
+//     return (0);
+// }
